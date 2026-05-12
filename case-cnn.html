@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>CNN Redesign — Anusha Prasad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/case-study.css"/>
+  <style>
+    :root{ --accent:#C77DFF; --accent-soft:rgba(199,125,255,.13); }
+  </style>
+</head>
+<body>
+  <div id="pg"></div>
+  <div id="c-dot"></div>
+  <div id="c-ring"></div>
+
+  <nav class="cs-nav">
+    <div class="cs-nav__pill">
+      <a href="Portfolio.html" class="cs-nav__logo"><img src="assets/logo.png" alt="AP"/></a>
+      <a href="Portfolio.html" class="cs-nav__back">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back
+      </a>
+      <a href="Portfolio.html#projects" class="cs-nav__link">All Work</a>
+      <a href="About.html" class="cs-nav__link">About</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="cs-hero">
+      <div class="cs-hero__bg"></div>
+      <div class="cs-hero__inner">
+        <div class="reveal in cs-eyebrow">
+          <span class="cs-eyebrow__line"></span>
+          <span class="cs-eyebrow__num">02 / Case Study</span>
+          <span>Information Architecture · UX Research</span>
+        </div>
+        <h1 class="reveal in reveal-1 cs-title">Rethinking <em>CNN.</em></h1>
+        <p class="reveal in reveal-2 cs-tagline">
+          Restructuring a <em>news network's</em> information hierarchy for a generation
+          that scans, swipes, and second-guesses every headline.
+        </p>
+        <div class="reveal in reveal-3 cs-meta">
+          <div class="cs-meta__cell"><span class="cs-meta__label">Role</span><span class="cs-meta__val">Information Architect · Researcher</span></div>
+          <div class="cs-meta__cell"><span class="cs-meta__label">Timeline</span><span class="cs-meta__val">8 Weeks · 2026</span></div>
+          <div class="cs-meta__cell"><span class="cs-meta__label">Methods</span><span class="cs-meta__val">Heuristic Evaluation · Card Sorting · Tree Testing</span></div>
+          <div class="cs-meta__cell"><span class="cs-meta__label">Tools</span><span class="cs-meta__val">ProvenByUsers</span></div>
+        </div>
+        <div class="cs-hero-frame">
+          <div class="cs-hero-frame__corner cs-hero-frame__corner--tl"></div>
+          <div class="cs-hero-frame__corner cs-hero-frame__corner--br"></div>
+          <img src="assets/case-study/cnn-thumbnail.png" alt="CNN app wireframes" style="background:#FBE9E7;object-fit:contain;"/>
+        </div>
+      </div>
+    </section>
+
+    <div class="cs-divider"></div>
+
+    <!-- OVERVIEW -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">02 — Overview</span>
+          <h2 class="reveal reveal-1 cs-section__title">Forty <em>top-level</em> categories.<br/>Nobody could find anything.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-prose">
+          CNN's site had grown by accumulation, not architecture. Every new vertical added a tab.
+          Every special section earned a flag. The result: <em>cognitive overload</em> on every page,
+          and a navigation pattern that punished the user for not already knowing where to look.
+        </p>
+        <p class="reveal reveal-3 cs-body" style="margin-top:32px">
+          <strong>The brief.</strong> Audit the existing IA, identify pain points through user research, and propose
+          a restructured hierarchy validated by tree testing — without losing access to any
+          existing content or breaking the editorial taxonomy.
+        </p>
+        <div class="cs-tags reveal reveal-4">
+          <span class="cs-tag">Information Architecture</span>
+          <span class="cs-tag">UX Research</span>
+          <span class="cs-tag">Accessibility</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIT -->
+    <section class="cs-section" style="background:linear-gradient(180deg,transparent,var(--accent-soft) 50%,transparent);">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">03 — Audit</span>
+          <h2 class="reveal reveal-1 cs-section__title">Mapping the <em>mess</em>.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-body">
+          Started with a content audit and heuristic evaluation against Nielsen's 10.
+          Scored every navigation entry against five common user goals, and surfaced
+          the structural patterns driving confusion.
+        </p>
+        <div class="cs-methods">
+          <div class="reveal reveal-1 cs-method">
+            <div class="cs-method__num">Audit / 01</div>
+            <h3 class="cs-method__title">40 Top-Level Items</h3>
+            <p class="cs-method__desc">Counted across primary nav, mega-menu, and secondary rails. Many duplicated each other; some were vestigial campaigns from prior years.</p>
+          </div>
+          <div class="reveal reveal-2 cs-method">
+            <div class="cs-method__num">Audit / 02</div>
+            <h3 class="cs-method__title">7 Tap-Depth Average</h3>
+            <p class="cs-method__desc">To reach common content (e.g. local weather, election results), users averaged 7 interactions. Industry benchmark: 3–4.</p>
+          </div>
+          <div class="reveal reveal-3 cs-method">
+            <div class="cs-method__num">Audit / 03</div>
+            <h3 class="cs-method__title">12 Heuristic Violations</h3>
+            <p class="cs-method__desc">Most severe: inconsistent labeling (same content under multiple labels), and lack of system status during long-form scrolling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">04 — Research</span>
+          <h2 class="reveal reveal-1 cs-section__title">Letting <em>users</em> sort the chaos.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-body">
+          Open card sorting with 20 participants to surface natural mental models, followed by
+          tree testing of a proposed structure with 35 participants. Triangulated qualitative
+          patterns from card-sort with task-success metrics from tree testing.
+        </p>
+        <div class="cs-insights">
+          <div class="reveal cs-insight">
+            <span class="cs-insight__num">01</span>
+            <div>
+              <h3 class="cs-insight__title">Users group by topic, not by section.</h3>
+              <p class="cs-insight__body">Participants consistently grouped "election results", "local weather", and "stock indices" together as <em>"things I check"</em> — not as Politics / Weather / Business. The taxonomy is editorial; the mental model is utility-first.</p>
+            </div>
+          </div>
+          <div class="reveal reveal-1 cs-insight">
+            <span class="cs-insight__num">02</span>
+            <div>
+              <h3 class="cs-insight__title">"Top stories" is a lifeline, not a default.</h3>
+              <p class="cs-insight__body">85% returned to the homepage when lost — and most could not name the section they had been in. Strong global navigation matters more than any single landing page.</p>
+            </div>
+          </div>
+          <div class="reveal reveal-2 cs-insight">
+            <span class="cs-insight__num">03</span>
+            <div>
+              <h3 class="cs-insight__title">Labels carry cognitive weight.</h3>
+              <p class="cs-insight__body"><em>"Markets"</em> beat <em>"Business"</em>. <em>"Weather"</em> beat <em>"Forecast"</em>. Concrete nouns won every single A/B label test. Editorial language was consistently rejected by users in favor of plain-spoken alternatives.</p>
+            </div>
+          </div>
+          <div class="reveal reveal-3 cs-insight">
+            <span class="cs-insight__num">04</span>
+            <div>
+              <h3 class="cs-insight__title">Accessibility was an architecture problem.</h3>
+              <p class="cs-insight__body">Screen-reader users were forced to traverse 40+ items in linear order. The IA wasn't just confusing visually — it was outright hostile to assistive tech, and no amount of ARIA patches the structure itself.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="cs-section" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.018) 50%,transparent);">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">05 — Restructuring</span>
+          <h2 class="reveal reveal-1 cs-section__title">From forty <em>tabs</em> to seven.</h2>
+        </div>
+        <div class="cs-process">
+          <div class="reveal cs-step">
+            <div class="cs-step__phase">Phase 01 · Inventory</div>
+            <h3 class="cs-step__title">Catalogued every URL, label, and rail</h3>
+            <p class="cs-step__desc">Built a single source of truth: 40 nav items + 180 sub-pages mapped, with traffic data overlaid to identify low-value entries before any restructuring.</p>
+          </div>
+          <div class="reveal reveal-1 cs-step">
+            <div class="cs-step__phase">Phase 02 · Card Sort</div>
+            <h3 class="cs-step__title">Open card sort, 20 participants</h3>
+            <p class="cs-step__desc">No labels prescribed. Participants grouped 60 content items and named their own clusters. Surfaced six dominant categories that mapped poorly to the existing seven sections.</p>
+          </div>
+          <div class="reveal reveal-2 cs-step">
+            <div class="cs-step__phase">Phase 03 · Proposed IA</div>
+            <h3 class="cs-step__title">Drafted a 7-category hierarchy</h3>
+            <p class="cs-step__desc">News · Politics · Markets · Weather · Health · Travel · More. Every existing top-level item rolled up cleanly. Nothing lost, no orphan pages.</p>
+          </div>
+          <div class="reveal reveal-3 cs-step">
+            <div class="cs-step__phase">Phase 04 · Tree Test</div>
+            <h3 class="cs-step__title">Validated with 35 participants, 8 tasks</h3>
+            <p class="cs-step__desc">Task success climbed from 47% (current IA) to 84% (proposed). Average tap-depth dropped from 7 → 3. Time-to-find cut by 58%.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">06 — Outcomes</span>
+          <h2 class="reveal reveal-1 cs-section__title">Measurable <em>improvement</em>.</h2>
+        </div>
+        <div class="cs-metrics">
+          <div class="reveal cs-metric">
+            <span class="cs-metric__num">+37%</span>
+            <span class="cs-metric__label">Task Success</span>
+            <span class="cs-metric__sub">47% → 84% across 8 navigation tasks</span>
+          </div>
+          <div class="reveal reveal-1 cs-metric">
+            <span class="cs-metric__num">−58%</span>
+            <span class="cs-metric__label">Time to Find</span>
+            <span class="cs-metric__sub">Median time across all tested tasks</span>
+          </div>
+          <div class="reveal reveal-2 cs-metric">
+            <span class="cs-metric__num">7→3</span>
+            <span class="cs-metric__label">Avg Tap Depth</span>
+            <span class="cs-metric__sub">Aligned with industry benchmark</span>
+          </div>
+        </div>
+        <div class="reveal cs-subhead" style="margin-top:80px">
+          <span class="cs-subhead__num">The New Sitemap</span>
+          <span class="cs-subhead__line"></span>
+        </div>
+        <h3 class="reveal reveal-1 cs-subhead__title">A <em>seven-category</em> hierarchy.</h3>
+        <div class="reveal reveal-2 cs-image-card" style="background:#fff;">
+          <img src="assets/case-study/cnn-sitemap-after.png" alt="CNN website sitemap redesign showing 7-category hierarchy"/>
+          <div class="cs-image-card__caption">Sitemap — Proposed IA</div>
+        </div>
+
+        <div class="reveal cs-subhead" style="margin-top:96px">
+          <span class="cs-subhead__num">The New Wireframes</span>
+          <span class="cs-subhead__line"></span>
+        </div>
+        <h3 class="reveal reveal-1 cs-subhead__title">Designed against the <em>new structure</em>.</h3>
+        <p class="reveal reveal-2 cs-body" style="margin-top:16px">
+          Three task-driven flows were prototyped against the proposed IA: navigating to a news article,
+          drilling into a subsection, and accessing Saved Stories from the profile.
+        </p>
+        <div class="cs-grid-3">
+          <div class="reveal cs-image-card" style="background:#fff;"><img src="assets/case-study/cnn-wire-1.png" alt="Task 1 — Navigate to a news article from the Business Section"/><div class="cs-image-card__caption">Task 1 — Business Section</div></div>
+          <div class="reveal reveal-1 cs-image-card" style="background:#fff;"><img src="assets/case-study/cnn-wire-2.png" alt="Technology subsection wireframe"/><div class="cs-image-card__caption">Task 1 — Subsection Drill</div></div>
+          <div class="reveal reveal-2 cs-image-card" style="background:#fff;"><img src="assets/case-study/cnn-wire-3.png" alt="Task 2 — Navigating to Saved Stories"/><div class="cs-image-card__caption">Task 2 — Saved Stories</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">07 — Reflection</span>
+          <h2 class="reveal reveal-1 cs-section__title">What the work <em>taught me</em>.</h2>
+        </div>
+        <div class="reveal reveal-2 cs-quote">
+          <span class="cs-quote__mark">"</span>
+          <div>
+            <p class="cs-quote__text">
+              IA is the part of UX nobody sees when it works — and the only part anyone notices when it doesn't.
+              The win wasn't a clever taxonomy. It was that <em>users stopped narrating their failures</em> back to me
+              during testing. They just navigated.
+            </p>
+            <span class="cs-quote__attr">— Reflection, Week 8</span>
+          </div>
+        </div>
+        <p class="cs-body" style="margin-top:48px">
+          <strong>Next steps.</strong> Validate the proposed structure with longitudinal data — synthetic
+          tree tests catch findability issues but miss <em>retention</em> issues. A live A/B with traffic
+          routing would be the next checkpoint, paired with screen-reader user testing to confirm the
+          accessibility gains hold up in production.
+        </p>
+      </div>
+    </section>
+
+    <!-- APPENDIX -->
+    <section class="cs-section" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.018) 50%,transparent);">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">08 — Appendix</span>
+          <h2 class="reveal reveal-1 cs-section__title">Research <em>artifacts</em>.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-body">
+          Full source material referenced throughout this case study — heuristic evaluation scorecards,
+          card-sort agreement matrices, and tree-test pilot results.
+        </p>
+
+        <div class="reveal cs-subhead" style="margin-top:48px">
+          <span class="cs-subhead__num">A · Heuristic Evaluation</span>
+          <span class="cs-subhead__line"></span>
+        </div>
+        <div class="cs-grid-2">
+          <div class="reveal cs-image-card" style="background:#fff;"><img src="assets/case-study/cnn-heuristic-1.png" alt="Heuristic evaluation Task 1"/><div class="cs-image-card__caption">Task 1 — Business Section</div></div>
+          <div class="reveal reveal-1 cs-image-card" style="background:#fff;"><img src="assets/case-study/cnn-heuristic-2.png" alt="Heuristic evaluation Task 2"/><div class="cs-image-card__caption">Task 2 — Saved Stories</div></div>
+        </div>
+
+        <div class="reveal cs-subhead" style="margin-top:72px">
+          <span class="cs-subhead__num">B · Card Sort & Tree Test</span>
+          <span class="cs-subhead__line"></span>
+        </div>
+        <div class="cs-grid-2">
+          <div class="reveal cs-image-card" style="background:#fff;"><img src="assets/case-study/cnn-card-sort.png" alt="Card sort pilot results"/><div class="cs-image-card__caption">Card Sort — Pilot Results</div></div>
+          <div class="reveal reveal-1 cs-image-card" style="background:#fff;"><img src="assets/case-study/cnn-tree-test.png" alt="Tree test pilot results"/><div class="cs-image-card__caption">Tree Test — Pilot Results</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEXT -->
+    <section class="cs-next">
+      <div class="cs-next__inner">
+        <div class="cs-next__lbl">Next Case Study</div>
+        <a href="case-beefriendly.html" class="cs-next__link">
+          <span class="cs-next__title">BeeFriendly <em>App</em></span>
+          <span class="cs-next__arr">→</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="cs-footer">
+      <div class="cs-footer__inner">
+        <div class="cs-footer__top">
+          <h2 class="cs-footer__title">Let's work <em>together.</em></h2>
+          <a href="mailto:anushaprasad20@gmail.com" class="cs-footer__email">anushaprasad20@gmail.com ↗</a>
+        </div>
+        <div class="cs-footer__bottom">
+          <div class="cs-footer__socials">
+            <a href="https://www.linkedin.com/in/anushaprasad20/" target="_blank" rel="noopener" class="cs-footer__social">LinkedIn ↗</a>
+            <a href="Portfolio.html" class="cs-footer__social">Home ↗</a>
+            <a href="About.html" class="cs-footer__social">About ↗</a>
+          </div>
+          <span class="cs-footer__copy">© 2026 Anusha Prasad · Chicago, IL</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const dot=document.getElementById('c-dot'),ring=document.getElementById('c-ring');
+    let mx=-200,my=-200,rx=-200,ry=-200;
+    window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+    document.addEventListener('mouseover',e=>{
+      const isLink=e.target.closest('a,button,[data-mag]');
+      const isImg=e.target.closest('.cs-shot,.cs-hero-frame');
+      const isText=e.target.closest('p,h1,h2,h3,h4');
+      if(isImg) document.body.className='c-img';
+      else if(isLink) document.body.className='c-link';
+      else if(isText) document.body.className='c-text';
+      else document.body.className='';
+    });
+    (function loop(){
+      dot.style.left=mx+'px'; dot.style.top=my+'px';
+      rx+=(mx-rx)*.09; ry+=(my-ry)*.09;
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(loop);
+    })();
+
+    window.addEventListener('scroll',()=>{
+      const p=Math.min(window.scrollY/(document.body.scrollHeight-window.innerHeight)*100,100);
+      document.getElementById('pg').style.width=p+'%';
+    },{passive:true});
+
+    const obs=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}
+      });
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal,.cs-divider').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>

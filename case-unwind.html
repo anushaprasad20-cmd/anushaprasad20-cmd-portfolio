@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Unwind — Anusha Prasad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/case-study.css"/>
+  <style>
+    :root{ --accent:#BDD99F; --accent-soft:rgba(189,217,159,.12); }
+  </style>
+</head>
+<body>
+  <div id="pg"></div>
+  <div id="c-dot"></div>
+  <div id="c-ring"></div>
+
+  <!-- NAV -->
+  <nav class="cs-nav">
+    <div class="cs-nav__pill">
+      <a href="Portfolio.html" class="cs-nav__logo"><img src="assets/logo.png" alt="AP"/></a>
+      <a href="Portfolio.html" class="cs-nav__back">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back
+      </a>
+      <a href="Portfolio.html#projects" class="cs-nav__link">All Work</a>
+      <a href="About.html" class="cs-nav__link">About</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="cs-hero__bg"></div>
+      <div class="cs-hero__inner">
+        <div class="reveal in cs-eyebrow">
+          <span class="cs-eyebrow__line"></span>
+          <span class="cs-eyebrow__num">01 / Case Study</span>
+          <span>Mixed-Method UX Research</span>
+        </div>
+        <h1 class="reveal in reveal-1 cs-title"><em>Unwind</em></h1>
+        <p class="reveal in reveal-2 cs-tagline">
+          Designing the exit from sleep procrastination — the behavioral loop that platforms
+          <em>profiting from your attention</em> will never fix themselves.
+        </p>
+        <div class="reveal in reveal-3 cs-meta">
+          <div class="cs-meta__cell"><span class="cs-meta__label">Role</span><span class="cs-meta__val">UX Researcher · Lead</span></div>
+          <div class="cs-meta__cell"><span class="cs-meta__label">Timeline</span><span class="cs-meta__val">10 Weeks · 2026</span></div>
+          <div class="cs-meta__cell"><span class="cs-meta__label">Methods</span><span class="cs-meta__val">Interviews · Affinity Mapping · Journey Mapping</span></div>
+          <div class="cs-meta__cell"><span class="cs-meta__label">Tools</span><span class="cs-meta__val">Figma · FigJam</span></div>
+        </div>
+        <div class="cs-hero-frame">
+          <div class="cs-hero-frame__corner cs-hero-frame__corner--tl"></div>
+          <div class="cs-hero-frame__corner cs-hero-frame__corner--br"></div>
+          <img src="assets/project1-hero.png" alt="Unwind concept screens" onerror="this.style.display='none';this.parentElement.querySelector('.cs-hero-frame__placeholder').style.display='block';"/>
+          <span class="cs-hero-frame__placeholder" style="display:none">UNWIND</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="cs-divider"></div>
+
+    <!-- OVERVIEW -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">02 — Overview</span>
+          <h2 class="reveal reveal-1 cs-section__title">The <em>problem</em><br/>nobody is incentivized to solve.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-prose">
+          People know they should sleep. They keep scrolling anyway. <em>Unwind</em> investigates
+          the gap between intention and behavior — and proposes a concept that interrupts the loop
+          without treating users like the problem.
+        </p>
+        <p class="reveal reveal-3 cs-body" style="margin-top:32px">
+          <strong>Why this matters.</strong> Existing screen-time tools optimize for awareness, not for action. They show
+          you yesterday's damage. They don't catch you in the moment. And the platforms designed to
+          hold your attention — by definition — won't help you put the phone down.
+        </p>
+        <div class="cs-tags reveal reveal-4">
+          <span class="cs-tag">UX Research</span>
+          <span class="cs-tag">Behavioral Design</span>
+          <span class="cs-tag">Concept Design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="cs-section" style="background:linear-gradient(180deg,transparent,var(--accent-soft) 50%,transparent);">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">03 — Research</span>
+          <h2 class="reveal reveal-1 cs-section__title">Listening before <em>solving</em>.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-body">
+          A mixed-method study designed to map the procrastination loop from the inside out.
+          We deliberately avoided self-report-only data — diary entries captured behavior in
+          context, while interviews surfaced the stories people tell themselves.
+        </p>
+        <div class="cs-methods">
+          <div class="reveal reveal-1 cs-method">
+            <div class="cs-method__num">01 / Recruit</div>
+            <h3 class="cs-method__title">8 Participants</h3>
+            <p class="cs-method__desc">Recruited via screener; ages 19–34, mix of students and early-career professionals. All self-identified as struggling with bedtime use.</p>
+          </div>
+          <div class="reveal reveal-2 cs-method">
+            <div class="cs-method__num">02 / Diary</div>
+            <h3 class="cs-method__title">7-Day Sleep Log</h3>
+            <p class="cs-method__desc">Participants logged intended bedtime, actual bedtime, and what kept them up. Captured 56 entries with context, not just timestamps.</p>
+          </div>
+          <div class="reveal reveal-3 cs-method">
+            <div class="cs-method__num">03 / Interview</div>
+            <h3 class="cs-method__title">60-min Semi-Structured</h3>
+            <p class="cs-method__desc">Probed motivations, friction points, and prior coping attempts. Walked through the previous night with each participant in detail.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSIGHTS -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">04 — Findings</span>
+          <h2 class="reveal reveal-1 cs-section__title">Four <em>insights</em> that shaped the concept.</h2>
+        </div>
+        <div class="cs-insights">
+          <div class="reveal cs-insight">
+            <span class="cs-insight__num">01</span>
+            <div>
+              <h3 class="cs-insight__title">"Just one more" is rarely about content.</h3>
+              <p class="cs-insight__body">Participants kept scrolling not because anything was urgent, but because <em>stopping</em> required a deliberate action. Friction worked against them — they had to choose to put the phone down, every time.</p>
+            </div>
+          </div>
+          <div class="reveal reveal-1 cs-insight">
+            <span class="cs-insight__num">02</span>
+            <div>
+              <h3 class="cs-insight__title">Trackers create guilt, not change.</h3>
+              <p class="cs-insight__body">7 of 8 participants had used a screen-time app. None changed behavior. Reports showed up the morning after — too late, too abstract. Awareness without intervention is shame at scale.</p>
+            </div>
+          </div>
+          <div class="reveal reveal-2 cs-insight">
+            <span class="cs-insight__num">03</span>
+            <div>
+              <h3 class="cs-insight__title">The decision happens at 11:47, not 11:00.</h3>
+              <p class="cs-insight__body">There's a specific moment — usually 30–60 min after intended bedtime — when participants either close the app or commit to another hour. Hitting that window is the entire game.</p>
+            </div>
+          </div>
+          <div class="reveal reveal-3 cs-insight">
+            <span class="cs-insight__num">04</span>
+            <div>
+              <h3 class="cs-insight__title">Replacement beats restriction.</h3>
+              <p class="cs-insight__body">Tools that simply blocked apps were uninstalled within days. Participants needed somewhere for their attention to land — a soft off-ramp, not a wall.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="cs-section" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.018) 50%,transparent);">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">05 — Process</span>
+          <h2 class="reveal reveal-1 cs-section__title">From data to <em>concept</em>.</h2>
+        </div>
+        <div class="cs-process">
+          <div class="reveal cs-step">
+            <div class="cs-step__phase">Phase 01 · Synthesis</div>
+            <h3 class="cs-step__title">Inductive coding of 56 diary entries + 8 transcripts</h3>
+            <p class="cs-step__desc">Open-coded raw data, surfaced 23 themes, clustered into four behavioral patterns. No predetermined frameworks — let the data speak first.</p>
+          </div>
+          <div class="reveal reveal-1 cs-step">
+            <div class="cs-step__phase">Phase 02 · Framing</div>
+            <h3 class="cs-step__title">Mapped the procrastination loop</h3>
+            <p class="cs-step__desc">Built a behavioral diagram of the trigger → reward → guilt cycle, identifying three intervention points where friction could be re-introduced for the user.</p>
+          </div>
+          <div class="reveal reveal-2 cs-step">
+            <div class="cs-step__phase">Phase 03 · Ideation</div>
+            <h3 class="cs-step__title">15 concepts, narrowed to 3</h3>
+            <p class="cs-step__desc">Generated wide, then filtered against research insights. Killed anything that relied on willpower alone or duplicated existing tracker patterns.</p>
+          </div>
+          <div class="reveal reveal-3 cs-step">
+            <div class="cs-step__phase">Phase 04 · Concept</div>
+            <h3 class="cs-step__title">A wind-down companion, not a tracker</h3>
+            <p class="cs-step__desc">Final concept: a soft intervention that activates 30 min after intended bedtime, offers replacement micro-rituals, and lets users opt-in rather than imposing rules.</p>
+          </div>
+        </div>
+
+        <div class="reveal cs-subhead" style="margin-top:80px">
+          <span class="cs-subhead__num">Synthesis · Affinity Diagram</span>
+          <span class="cs-subhead__line"></span>
+        </div>
+        <h3 class="reveal reveal-1 cs-subhead__title">Clustering the <em>raw data</em>.</h3>
+        <p class="reveal reveal-2 cs-body" style="margin-top:12px">
+          A wall of color-coded notes from diary entries and interview transcripts — clustered until
+          the four behavioral patterns surfaced.
+        </p>
+        <div class="reveal reveal-3 cs-image-card" style="background:#fff;">
+          <img src="assets/case-study/unwind-affinity.png" alt="Unwind affinity diagram — clustered themes from research synthesis"/>
+          <div class="cs-image-card__caption">Affinity Diagram — Research synthesis</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION SHOTS -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">06 — Concept</span>
+          <h2 class="reveal reveal-1 cs-section__title">A <em>quieter</em> end to the day.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-body">
+          To articulate the intervention, two journey maps were built — one for the existing behavior loop,
+          one for the proposed loop under the Unwind concept. Side-by-side, they make the change visible:
+          fewer red feelings, an earlier off-ramp, a quieter morning.
+        </p>
+        <div class="reveal cs-image-card" style="background:#fff;margin-top:32px;">
+          <img src="assets/case-study/unwind-journey-1.png" alt="Unwind journey map — current state without intervention"/>
+          <div class="cs-image-card__caption">Journey Map 01 — Current state, no intervention</div>
+        </div>
+        <div class="reveal reveal-1 cs-image-card" style="background:#fff;margin-top:24px;">
+          <img src="assets/case-study/unwind-journey-2.png" alt="Unwind journey map — with Unwind app intervention"/>
+          <div class="cs-image-card__caption">Journey Map 02 — With Unwind intervention</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">07 — Reflection</span>
+          <h2 class="reveal reveal-1 cs-section__title">What the work <em>taught me</em>.</h2>
+        </div>
+        <div class="reveal reveal-2 cs-quote">
+          <span class="cs-quote__mark">"</span>
+          <div>
+            <p class="cs-quote__text">
+              The most valuable insight came from a participant who said,
+              <em>"I'm not addicted — I just don't have anywhere else to put the energy at midnight."</em>
+              That reframed the whole problem. We weren't designing against a habit. We were designing
+              for a moment that didn't have a script yet.
+            </p>
+            <span class="cs-quote__attr">— Notebook entry, Week 6</span>
+          </div>
+        </div>
+        <p class="cs-body" style="margin-top:48px">
+          <strong>Next steps.</strong> Validate the concept with a higher-fidelity prototype and a
+          two-week field study. Specifically test whether the soft intervention timing holds up
+          across chronotypes, and whether the replacement micro-rituals retain meaning over time
+          or fade into noise.
+        </p>
+      </div>
+    </section>
+
+    <!-- NEXT PROJECT -->
+    <section class="cs-next">
+      <div class="cs-next__inner">
+        <div class="cs-next__lbl">Next Case Study</div>
+        <a href="case-cnn.html" class="cs-next__link">
+          <span class="cs-next__title">CNN <em>Redesign</em></span>
+          <span class="cs-next__arr">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="cs-footer">
+      <div class="cs-footer__inner">
+        <div class="cs-footer__top">
+          <h2 class="cs-footer__title">Let's work <em>together.</em></h2>
+          <a href="mailto:anushaprasad20@gmail.com" class="cs-footer__email">anushaprasad20@gmail.com ↗</a>
+        </div>
+        <div class="cs-footer__bottom">
+          <div class="cs-footer__socials">
+            <a href="https://www.linkedin.com/in/anushaprasad20/" target="_blank" rel="noopener" class="cs-footer__social">LinkedIn ↗</a>
+            <a href="Portfolio.html" class="cs-footer__social">Home ↗</a>
+            <a href="About.html" class="cs-footer__social">About ↗</a>
+          </div>
+          <span class="cs-footer__copy">© 2026 Anusha Prasad · Chicago, IL</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Cursor
+    const dot=document.getElementById('c-dot'),ring=document.getElementById('c-ring');
+    let mx=-200,my=-200,rx=-200,ry=-200;
+    window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+    document.addEventListener('mouseover',e=>{
+      const isLink=e.target.closest('a,button,[data-mag]');
+      const isImg=e.target.closest('.cs-shot,.cs-hero-frame');
+      const isText=e.target.closest('p,h1,h2,h3,h4');
+      if(isImg) document.body.className='c-img';
+      else if(isLink) document.body.className='c-link';
+      else if(isText) document.body.className='c-text';
+      else document.body.className='';
+    });
+    (function loop(){
+      dot.style.left=mx+'px'; dot.style.top=my+'px';
+      rx+=(mx-rx)*.09; ry+=(my-ry)*.09;
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(loop);
+    })();
+
+    // Scroll progress
+    window.addEventListener('scroll',()=>{
+      const p=Math.min(window.scrollY/(document.body.scrollHeight-window.innerHeight)*100,100);
+      document.getElementById('pg').style.width=p+'%';
+    },{passive:true});
+
+    // Reveal on scroll
+    const obs=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}
+      });
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal,.cs-divider').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>

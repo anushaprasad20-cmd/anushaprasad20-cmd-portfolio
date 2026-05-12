@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>BeeFriendly App — Anusha Prasad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/case-study.css"/>
+  <style>
+    :root{ --accent:#84AA52; --accent-soft:rgba(132,170,82,.14); }
+    /* Custom Forest & Honey palette swatches */
+    .cs-palette{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:24px;}
+    .cs-swatch{aspect-ratio:1;border-radius:14px;display:flex;flex-direction:column;justify-content:flex-end;
+      padding:14px;font-family:var(--mono);font-size:10px;color:#fff;letter-spacing:.06em;
+      transition:transform .35s cubic-bezier(0.16,1,0.3,1);border:1px solid rgba(255,255,255,.08);}
+    .cs-swatch:hover{transform:translateY(-4px) scale(1.03);}
+    .cs-swatch__hex{opacity:.7;font-size:9px;margin-top:2px;letter-spacing:.04em;}
+    .cs-typography{display:grid;grid-template-columns:120px 1fr;gap:32px;align-items:baseline;
+      padding:24px 0;border-bottom:1px solid var(--bdr);}
+    .cs-typography__lbl{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);}
+    .cs-typography__sample{font-family:var(--sans);color:var(--text);}
+  </style>
+
+</head>
+<body>
+  <div id="pg"></div>
+  <div id="c-dot"></div>
+  <div id="c-ring"></div>
+
+  <nav class="cs-nav">
+    <div class="cs-nav__pill">
+      <a href="Portfolio.html" class="cs-nav__logo"><img src="assets/logo.png" alt="AP"/></a>
+      <a href="Portfolio.html" class="cs-nav__back">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back
+      </a>
+      <a href="Portfolio.html#projects" class="cs-nav__link">All Work</a>
+      <a href="About.html" class="cs-nav__link">About</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="cs-hero">
+      <div class="cs-hero__bg"></div>
+      <div class="cs-hero__inner">
+        <div class="reveal in cs-eyebrow">
+          <span class="cs-eyebrow__line"></span>
+          <span class="cs-eyebrow__num">03 / Case Study</span>
+          <span>App Design · Design System</span>
+        </div>
+        <h1 class="reveal in reveal-1 cs-title"><em>BeeFriendly.</em></h1>
+        <p class="reveal in reveal-2 cs-tagline">
+          A gardening companion app that helps people build <em>pollinator-friendly</em> gardens —
+          built end-to-end with a Forest &amp; Honey design system.
+        </p>
+        <div class="reveal in reveal-3 cs-meta">
+          <div class="cs-meta__cell"><span class="cs-meta__label">Role</span><span class="cs-meta__val">UX Designer · Design Systems</span></div>
+          <div class="cs-meta__cell"><span class="cs-meta__label">Timeline</span><span class="cs-meta__val">8 Weeks · 2026</span></div>
+          <div class="cs-meta__cell"><span class="cs-meta__label">Methods</span><span class="cs-meta__val">UI Design · Usability Testing</span></div>
+          <div class="cs-meta__cell"><span class="cs-meta__label">Tools</span><span class="cs-meta__val">Figma</span></div>
+        </div>
+        <div class="cs-hero-frame" style="background:#F1F5DD;">
+          <div class="cs-hero-frame__corner cs-hero-frame__corner--tl"></div>
+          <div class="cs-hero-frame__corner cs-hero-frame__corner--br"></div>
+          <img src="assets/case-study/bee-illustration.png" alt="BeeFriendly bee &amp; daisy illustration" style="object-fit:contain;background:#F1F5DD;"/>
+        </div>
+      </div>
+    </section>
+
+    <div class="cs-divider"></div>
+
+    <!-- OVERVIEW -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">02 — Overview</span>
+          <h2 class="reveal reveal-1 cs-section__title">Pollinators are <em>declining</em>.<br/>Most gardeners want to help.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-prose">
+          The information already exists — which plants, which seasons, which microclimates.
+          But it's scattered across PDFs, university extensions, and forum threads. <em>BeeFriendly</em>
+          is the answer to "I want to do something but I don't know where to start."
+        </p>
+        <p class="reveal reveal-3 cs-body" style="margin-top:32px">
+          <strong>Scope.</strong> An end-to-end mobile app — onboarding, plant guide, garden planner,
+          and seasonal reminders — supported by a full Forest &amp; Honey design system covering
+          variables, components, and shape language.
+        </p>
+        <div class="cs-tags reveal reveal-4">
+          <span class="cs-tag">App Design</span>
+          <span class="cs-tag">Design System</span>
+          <span class="cs-tag">Visual Design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIENCE -->
+    <section class="cs-section" style="background:linear-gradient(180deg,transparent,var(--accent-soft) 50%,transparent);">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">03 — Research</span>
+          <h2 class="reveal reveal-1 cs-section__title">Who we're <em>designing for</em>.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-body">
+          Generative interviews with 6 home gardeners — beginners through intermediates — surfaced
+          three personas. Each one needed different scaffolding: not because they wanted different
+          things, but because their confidence in their own decisions varied wildly.
+        </p>
+        <div class="cs-methods">
+          <div class="reveal reveal-1 cs-method">
+            <div class="cs-method__num">Persona 01</div>
+            <h3 class="cs-method__title">The Apprentice</h3>
+            <p class="cs-method__desc">"I just bought a balcony planter." Needs strong onboarding, plant suggestions matched to their zone, and zero shame for asking basic questions.</p>
+          </div>
+          <div class="reveal reveal-2 cs-method">
+            <div class="cs-method__num">Persona 02</div>
+            <h3 class="cs-method__title">The Curator</h3>
+            <p class="cs-method__desc">"I have a yard, I know what works." Needs the planner more than the guide. Wants seasonal sequencing and pollinator-targeting, not a 101 course.</p>
+          </div>
+          <div class="reveal reveal-3 cs-method">
+            <div class="cs-method__num">Persona 03</div>
+            <h3 class="cs-method__title">The Steward</h3>
+            <p class="cs-method__desc">"I'm trying to fix the back lot." Multi-year project. Needs progress tracking, year-over-year reminders, and content geared toward longer time horizons.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN SYSTEM -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">04 — Design System</span>
+          <h2 class="reveal reveal-1 cs-section__title">Forest &amp; <em>Honey</em>.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-body">
+          The visual system started with a question: what does a tool for tending pollinators feel like?
+          The answer wasn't "nature app" — it was <em>quiet competence</em>. Earthy greens, warm honey accents,
+          generous spacing, and 20px corner radii throughout to keep every surface soft.
+        </p>
+        <h3 class="reveal reveal-3" style="font-family:var(--display);font-size:18px;margin-top:48px;margin-bottom:16px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)">Color Palette</h3>
+        <div class="cs-palette reveal reveal-3">
+          <div class="cs-swatch" style="background:#1F2D1A">Forest 900<span class="cs-swatch__hex">#1F2D1A</span></div>
+          <div class="cs-swatch" style="background:#3F5A2C">Forest 700<span class="cs-swatch__hex">#3F5A2C</span></div>
+          <div class="cs-swatch" style="background:#84AA52">Forest 500<span class="cs-swatch__hex">#84AA52</span></div>
+          <div class="cs-swatch" style="background:#E8B863;color:#3F2A0E">Honey 500<span class="cs-swatch__hex">#E8B863</span></div>
+          <div class="cs-swatch" style="background:#FAEFD9;color:#3F2A0E">Honey 100<span class="cs-swatch__hex">#FAEFD9</span></div>
+        </div>
+        <h3 class="reveal reveal-4" style="font-family:var(--display);font-size:18px;margin-top:64px;margin-bottom:16px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)">Typography Scale</h3>
+        <div class="reveal reveal-4">
+          <div class="cs-typography">
+            <span class="cs-typography__lbl">Display / 48</span>
+            <span class="cs-typography__sample" style="font-size:48px;font-weight:600;line-height:1.1">Plant a tiny sanctuary.</span>
+          </div>
+          <div class="cs-typography">
+            <span class="cs-typography__lbl">Heading / 24</span>
+            <span class="cs-typography__sample" style="font-size:24px;font-weight:600">Plants for your zone</span>
+          </div>
+          <div class="cs-typography">
+            <span class="cs-typography__lbl">Body / 16</span>
+            <span class="cs-typography__sample" style="font-size:16px;font-weight:400;line-height:1.6;color:var(--muted)">Lavender thrives in full sun. It draws bumblebees, mason bees, and a wide range of butterflies through the late summer.</span>
+          </div>
+          <div class="cs-typography">
+            <span class="cs-typography__lbl">Caption / 12</span>
+            <span class="cs-typography__sample" style="font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)">Zone 5b · Full Sun</span>
+          </div>
+        </div>
+        <h3 class="reveal" style="font-family:var(--display);font-size:18px;margin-top:64px;margin-bottom:16px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)">Shape Language</h3>
+        <p class="reveal cs-body">
+          A consistent <strong>20px corner radius</strong> on every surface — cards, sheets, buttons, inputs.
+          The result is a UI that feels coherent without being uniform: same softness, varied scale,
+          all the way down to micro-elements like chips and badges (12px).
+        </p>
+      </div>
+    </section>
+
+    <!-- KEY SCREENS -->
+    <section class="cs-section" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.018) 50%,transparent);">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">05 — Key Screens</span>
+          <h2 class="reveal reveal-1 cs-section__title">The <em>core flow</em>.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-body">
+          The screens carry the entire app — onboarding, garden health reports, daily tasks, plant
+          diagnosis. Each was prototyped, tested, and iterated against the design system, not the
+          other way around. The system existed first; screens used it, flagged gaps, and the system grew.
+        </p>
+        <div class="reveal reveal-3 cs-image-card" style="background:#F1F5DD;margin-top:32px;">
+          <img src="assets/case-study/bee-screens-1.png" alt="BeeFriendly key screens — Garden Report, Welcome, Plant Doctor"/>
+          <div class="cs-image-card__caption">Garden Report · Welcome · Plant Doctor</div>
+        </div>
+        <div class="reveal cs-image-card" style="background:#F1F5DD;margin-top:24px;">
+          <img src="assets/case-study/bee-screens-2.png" alt="BeeFriendly app collage — task creation, plant catalog, locations, account, home"/>
+          <div class="cs-image-card__caption">Task Builder · Catalog · Locations · Account</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USABILITY -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">06 — Validation</span>
+          <h2 class="reveal reveal-1 cs-section__title">Tested with <em>real gardeners</em>.</h2>
+        </div>
+        <p class="reveal reveal-2 cs-body">
+          Two rounds of moderated usability testing, 6 participants per round. Tested against the three
+          personas with task-based scenarios: <em>"You just moved into a new place — set up your garden."</em>
+          Iteration between rounds focused on the planner's discoverability and the onboarding pacing.
+        </p>
+        <div class="cs-insights">
+          <div class="reveal cs-insight">
+            <span class="cs-insight__num">01</span>
+            <div>
+              <h3 class="cs-insight__title">Onboarding's "zone" question stalled new users.</h3>
+              <p class="cs-insight__body">Beginners didn't know their USDA hardiness zone. Solved with location-based auto-detect + a fallback "I'm not sure" path that walks through it gently. Subsequent round: 100% completion.</p>
+            </div>
+          </div>
+          <div class="reveal reveal-1 cs-insight">
+            <span class="cs-insight__num">02</span>
+            <div>
+              <h3 class="cs-insight__title">The planner was loved — once people found it.</h3>
+              <p class="cs-insight__body">Hidden behind a tab icon initially. Promoted to a hero card on the home screen for round two. Engagement with the planner doubled, with no other changes.</p>
+            </div>
+          </div>
+          <div class="reveal reveal-2 cs-insight">
+            <span class="cs-insight__num">03</span>
+            <div>
+              <h3 class="cs-insight__title">The system held up under stress-testing.</h3>
+              <p class="cs-insight__body">Adding new screens during round-two iteration required <em>zero new components</em>. Every new pattern composed from existing primitives — the strongest validation a design system can get.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">07 — Outcomes</span>
+          <h2 class="reveal reveal-1 cs-section__title">By the <em>numbers</em>.</h2>
+        </div>
+        <div class="cs-metrics">
+          <div class="reveal cs-metric">
+            <span class="cs-metric__num">42</span>
+            <span class="cs-metric__label">Components</span>
+            <span class="cs-metric__sub">Atoms, molecules, organisms — versioned</span>
+          </div>
+          <div class="reveal reveal-1 cs-metric">
+            <span class="cs-metric__num">100%</span>
+            <span class="cs-metric__label">Onboarding Completion</span>
+            <span class="cs-metric__sub">Round 2 — up from 67% in round 1</span>
+          </div>
+          <div class="reveal reveal-2 cs-metric">
+            <span class="cs-metric__num">2×</span>
+            <span class="cs-metric__label">Planner Engagement</span>
+            <span class="cs-metric__sub">After single placement change</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="cs-section">
+      <div class="cs-section__inner">
+        <div class="cs-section__hdr">
+          <span class="reveal cs-section__num">08 — Reflection</span>
+          <h2 class="reveal reveal-1 cs-section__title">What the work <em>taught me</em>.</h2>
+        </div>
+        <div class="reveal reveal-2 cs-quote">
+          <span class="cs-quote__mark">"</span>
+          <div>
+            <p class="cs-quote__text">
+              Building the design system <em>before</em> the screens felt slow at first.
+              By round-two iteration, every change took minutes instead of hours — because the
+              question was never "what should this look like" but always "which token applies here."
+            </p>
+            <span class="cs-quote__attr">— Notebook entry, Week 9</span>
+          </div>
+        </div>
+        <p class="cs-body" style="margin-top:48px">
+          <strong>Next steps.</strong> Ship a beta with a small cohort of round-two testers, validate the
+          seasonal-reminder system against an actual growing season (not just a synthetic timeline),
+          and explore community features — co-design with stewards is the obvious place to start.
+        </p>
+      </div>
+    </section>
+
+    <!-- NEXT -->
+    <section class="cs-next">
+      <div class="cs-next__inner">
+        <div class="cs-next__lbl">Back to Work</div>
+        <a href="Portfolio.html#projects" class="cs-next__link">
+          <span class="cs-next__title">All <em>Projects</em></span>
+          <span class="cs-next__arr">→</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="cs-footer">
+      <div class="cs-footer__inner">
+        <div class="cs-footer__top">
+          <h2 class="cs-footer__title">Let's work <em>together.</em></h2>
+          <a href="mailto:anushaprasad20@gmail.com" class="cs-footer__email">anushaprasad20@gmail.com ↗</a>
+        </div>
+        <div class="cs-footer__bottom">
+          <div class="cs-footer__socials">
+            <a href="https://www.linkedin.com/in/anushaprasad20/" target="_blank" rel="noopener" class="cs-footer__social">LinkedIn ↗</a>
+            <a href="Portfolio.html" class="cs-footer__social">Home ↗</a>
+            <a href="About.html" class="cs-footer__social">About ↗</a>
+          </div>
+          <span class="cs-footer__copy">© 2026 Anusha Prasad · Chicago, IL</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const dot=document.getElementById('c-dot'),ring=document.getElementById('c-ring');
+    let mx=-200,my=-200,rx=-200,ry=-200;
+    window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+    document.addEventListener('mouseover',e=>{
+      const isLink=e.target.closest('a,button,[data-mag]');
+      const isImg=e.target.closest('.cs-shot,.cs-hero-frame,.cs-swatch');
+      const isText=e.target.closest('p,h1,h2,h3,h4');
+      if(isImg) document.body.className='c-img';
+      else if(isLink) document.body.className='c-link';
+      else if(isText) document.body.className='c-text';
+      else document.body.className='';
+    });
+    (function loop(){
+      dot.style.left=mx+'px'; dot.style.top=my+'px';
+      rx+=(mx-rx)*.09; ry+=(my-ry)*.09;
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(loop);
+    })();
+
+    window.addEventListener('scroll',()=>{
+      const p=Math.min(window.scrollY/(document.body.scrollHeight-window.innerHeight)*100,100);
+      document.getElementById('pg').style.width=p+'%';
+    },{passive:true});
+
+    const obs=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}
+      });
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal,.cs-divider').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>
