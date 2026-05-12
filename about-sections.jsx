@@ -84,12 +84,12 @@ function AboutNav() {
   return (
     <nav className={`a-nav ${scrolled ? 'a-nav--scrolled' : ''}`}>
       <div className="a-nav__inner">
-        <a href="Portfolio.html" className="a-nav__logo" data-mag="true">
+        <a href="index.html" className="a-nav__logo" data-mag="true">
           <img src="assets/logo.png" alt="AP" width="38" height="38" style={{borderRadius:'50%',objectFit:'cover',display:'block'}}/>
         </a>
         <div className="a-nav__items">
           {['Projects','About','Resume','Contact'].map(item => (
-            <a key={item} href={item === 'Projects' ? 'Portfolio.html#projects' : item === 'About' ? '#' : `Portfolio.html#${item.toLowerCase()}`}
+            <a key={item} href={item === 'Projects' ? 'index.html#projects' : item === 'About' ? '#' : `index.html#${item.toLowerCase()}`}
               className={`a-nav__item ${item === 'About' ? 'a-nav__item--active' : ''}`}
               data-mag="true">{item}</a>
           ))}
